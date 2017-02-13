@@ -67,8 +67,6 @@ static const CGFloat maxWaveHeight = 100.0;
 -(void) createView {
     _shapeLayer = [CAShapeLayer layer];
     _shapeLayer.frame = CGRectMake(0, 0, self.view.bounds.size.width, minimalHeight);
-//  _shapeLayer.backgroundColor = [UIColor colorWithRed:57/255.0 green:67/255.0 blue:89/255.0 alpha:1.0].CGColor;
-//    _shapeLayer.actions = [NSDictionary dictionaryWithObjectsAndKeys:NULL,@"position",NULL,@"bounds",NULL,@"path",nil];
     _shapeLayer.fillColor = [UIColor colorWithRed:57/255.0 green:67/255.0 blue:89/255.0 alpha:1.0].CGColor;
     [self.view.layer addSublayer:_shapeLayer];
     
@@ -115,14 +113,6 @@ static const CGFloat maxWaveHeight = 100.0;
     self.r3Lbl = [[UILabel alloc]init];
     self.r3Lbl.text = @"r3";
     [self.view addSubview:self.r3Lbl];
-    
-//    _cControlPointView.backgroundColor = [UIColor redColor];
-//    _l1ControlPointView.backgroundColor = [UIColor redColor];
-//     _l2ControlPointView.backgroundColor = [UIColor redColor];
-//     _l3ControlPointView.backgroundColor = [UIColor redColor];
-//    _r1ControlPointView.backgroundColor = [UIColor redColor];
-//    _r2ControlPointView.backgroundColor = [UIColor redColor];
-//    _r3ControlPointView.backgroundColor = [UIColor redColor];
     
     [self.view addSubview:_cControlPointView];
     [self.view addSubview:_l1ControlPointView];
